@@ -1,0 +1,10 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/wknd-asset-share",
+        "create path (nt:unstructured) /content/dam/wknd-asset-share/jcr:content",
+        "set properties on /content/dam/wknd-asset-share/jcr:content",
+        "set cq:conf{String} to /conf/wknd-asset-share",
+        "set jcr:title{String} to \"WKND Asset Share\"",
+        "end"
+    ]
+}
