@@ -14,9 +14,7 @@
  |  See the License for the specific language governing permissions and
  |  limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.adobe.aem.guides</groupId>
     <artifactId>wknd-asset-share</artifactId>
@@ -169,7 +167,8 @@
                                 <goal>bnd-process</goal>
                             </goals>
                             <configuration>
-                                <bnd><![CDATA[
+                                <bnd>
+                                    <![CDATA[
 Bundle-Category: ${componentGroupName}
 
 # export all versioned packages except for conditional ones (https://github.com/bndtools/bnd/issues/3721#issuecomment-579026778)
@@ -182,7 +181,8 @@ Bundle-Category: ${componentGroupName}
 Bundle-DocURL:
 -plugin org.apache.sling.caconfig.bndplugin.ConfigurationClassScannerPlugin
 -plugin org.apache.sling.bnd.models.ModelsScannerPlugin
-                                ]]></bnd>
+                                ]]>
+                                </bnd>
                             </configuration>
                         </execution>
                     </executions>
@@ -525,6 +525,20 @@ Bundle-DocURL:
                 <scope>provided</scope>
             </dependency>
 
+            <!-- Asset Share Commons -->
+            <dependency>
+                <groupId>com.adobe.aem.commons</groupId>
+                <artifactId>assetshare.all</artifactId>
+                <version>2.1.10</version>
+                <type>zip</type>
+            </dependency>
+            <!-- optional dependency to code against Asset Share Commons APIs -->            
+            <dependency>
+                <groupId>com.adobe.aem.commons</groupId>
+                <artifactId>assetshare.core</artifactId>
+                <version>2.1.10</version>
+                <type>jar</type>
+            </dependency>
 
             <!-- Testing -->
             <dependency>

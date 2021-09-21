@@ -77,6 +77,12 @@
                             <type>zip</type>
                             <target>/apps/wknd-asset-share-packages/application/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>com.adobe.aem.commons</groupId>
+                            <artifactId>assetshare.all</artifactId>
+                            <type>zip</type>
+                            <target>/apps/wknd-asset-share-packages/container/install</target>
+                        </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -194,6 +200,11 @@
             <groupId>com.adobe.aem.guides</groupId>
             <artifactId>wknd-asset-share.ui.config</artifactId>
             <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.aem.commons</groupId>
+            <artifactId>assetshare.all</artifactId>
             <type>zip</type>
         </dependency>
 

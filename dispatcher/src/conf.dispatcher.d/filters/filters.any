@@ -11,3 +11,18 @@ $include "./default_filters.any"
 
 # Allow manifest.webmanifest files located in the content
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
+
+# User profile retrieval (HTTP GET /home/users/ira.profile.json)
+/0201 { /type "allow" /method "GET" /path "/home/users/*" /extension '(json|png)' }
+
+# ContextHub page data
+/0202 { /type "allow" /method "GET" /path "/content/*" /selectors "pagedata" /extension "json" }
+
+# Async Download Framework
+/0300 { /type "allow" /method "GET" /path "/content/dam" /selectors "downloadbinaries" /extension "json" }
+
+# Asset Rendition request
+/0400 { /type "allow" /method "GET" /path "/content/dam/*" /extension "renditions" }
+
+# Asset Rendition downloads
+/0401 { /type "allow" /method "POST" /path "/content/*" /selectors "download-asset-renditions" /extension "zip" }
