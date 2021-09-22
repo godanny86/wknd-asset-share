@@ -28,25 +28,25 @@
                     emailFieldLabel="E-mail Address"
                     emailPlaceholder="Comma delimited list of e-mail addresses"
                     emailTemplatePath="/conf/asset-share-commons/settings/notification/email/asset-share-commons/share/default.html"
-                    errorTitle="Error"
                     errorMessage="An error occurred while attempting to send the e-mail."
-                    sendingMessage="Sending e-mail..."
+                    errorTitle="Error"
                     messageFieldLabel="Message (optional)"
                     messagePlaceholder="Enter an optional message"
                     modalTitle="Share"
+                    replyToSharer="{Boolean}false"
+                    sendingMessage="Sending e-mail..."
                     shareButton="Share"
                     shareOptionsTitle="Share Options"
                     subject="Check em out"
-                    successTitle="Success"
                     successMessage="Email sent successfully"
-                    useSharerSignature="{Boolean}true"
-                    replyToSharer="{Boolean}false">
+                    successTitle="Success"
+                    useSharerSignature="{Boolean}true">
                     <data
-                            jcr:primaryType="nt:unstructured"
-                            senderEmailAddress="assetsharecommons@gmail.com"
-                            senderName="Asset Share Commons"
-                            signature="Your digital marketing team"
-                            subject="Check out these assets!"/>
+                        jcr:primaryType="nt:unstructured"
+                        senderEmailAddress="assetsharecommons@gmail.com"
+                        senderName="Asset Share Commons"
+                        signature="Your digital marketing team"
+                        subject="Check out these assets!"/>
                 </share>
             </responsivegrid>
         </root>

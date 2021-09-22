@@ -238,9 +238,9 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="asset-share-commons/components/details/action-buttons"
                         addToCartLabel="Add to Cart"
-                        removeFromCartLabel="Remove from Cart"
                         downloadLabel="Download"
                         label="Actions"
+                        removeFromCartLabel="Remove from Cart"
                         shareLabel="Share">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
@@ -254,7 +254,7 @@
         <config jcr:primaryType="nt:unstructured">
             <asset-details
                 jcr:primaryType="nt:unstructured"
-                placeholderPath="/content/dam/asset-share-commons/en/site/placeholder.pptx"/>
+                placeholderPath="/content/dam/wknd-asset-share/en/site/placeholder.pptx"/>
         </config>
     </jcr:content>
 </jcr:root>

@@ -15,9 +15,8 @@
                 <downloads
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="asset-share-commons/components/modals/downloads"
-                    modalTitle="Downloads"
-                    emptyText="No pending downloads">
-                </downloads>
+                    emptyText="No pending downloads"
+                    modalTitle="Downloads"/>
             </responsivegrid>
         </root>
     </jcr:content>

@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2021-09-22T16:34:30.562-07:00"
+        cq:lastModifiedBy="admin"
         cq:redirectTarget="/content/wknd-asset-share/us/en"
         cq:template="/conf/wknd-asset-share/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
-        jcr:title="us"
-        sling:resourceType="wknd-asset-share/components/page"/>
+        jcr:title="United States"
+        sling:resourceType="wknd-asset-share/components/page"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
     <en/>
 </jcr:root>

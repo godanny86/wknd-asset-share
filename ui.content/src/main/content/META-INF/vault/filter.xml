@@ -2,6 +2,6 @@
 <workspaceFilter version="1.0">
     <filter root="/conf/wknd-asset-share" mode="merge"/>
     <filter root="/content/wknd-asset-share" mode="merge"/>
-    <filter root="/content/dam/wknd-asset-share/asset.jpg" mode="merge"/>
+    <filter root="/content/dam/wknd-asset-share" mode="merge"/>
     <filter root="/content/experience-fragments/wknd-asset-share" mode="merge"/>
 </workspaceFilter>

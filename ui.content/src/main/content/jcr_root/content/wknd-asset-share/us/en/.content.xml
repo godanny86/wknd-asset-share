@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-10-17T12:34:50.376-04:00"
+        cq:lastModified="{Date}2021-09-22T16:00:52.194-07:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd-asset-share/settings/wcm/templates/search-template"
         jcr:primaryType="cq:PageContent"
@@ -38,8 +38,8 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="TYPE"
-                        autoSearch="{Boolean}true"
                         sling:resourceType="asset-share-commons/components/search/property"
+                        autoSearch="{Boolean}true"
                         operation="equals"
                         property="./jcr:content/metadata/dc:format"
                         source="local"
@@ -74,8 +74,8 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="LAST MODIFIED"
-                        autoSearch="{Boolean}true"
                         sling:resourceType="asset-share-commons/components/search/date-range"
+                        autoSearch="{Boolean}true"
                         dateType="relativedaterange"
                         property="jcr:content/jcr:lastModified"
                         type="radio">
@@ -101,8 +101,8 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="CREATED"
-                        autoSearch="{Boolean}true"
                         sling:resourceType="asset-share-commons/components/search/date-range"
+                        autoSearch="{Boolean}true"
                         dateType="daterange"
                         endPlaceholder="End Date"
                         property="jcr:created"
@@ -116,8 +116,8 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="STYLE"
-                        autoSearch="{Boolean}true"
                         sling:resourceType="asset-share-commons/components/search/tags"
+                        autoSearch="{Boolean}true"
                         operation="equals"
                         property="./jcr:content/metadata/cq:tags"
                         type="slider"/>
@@ -129,8 +129,8 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="ORIENTATION"
-                        autoSearch="{Boolean}true"
                         sling:resourceType="asset-share-commons/components/search/tags"
+                        autoSearch="{Boolean}true"
                         operation="equals"
                         type="toggle"/>
                     <property_1380745264
@@ -140,8 +140,8 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="DRM"
-                        autoSearch="{Boolean}true"
                         sling:resourceType="asset-share-commons/components/search/property"
+                        autoSearch="{Boolean}true"
                         operation="exists"
                         property="./jcr:content/metadata/xmpRights:WebStatement"
                         source="local"
@@ -293,7 +293,7 @@
                     <results
                         jcr:created="{Date}2017-10-05T21:02:28.868-04:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2017-10-17T12:34:50.369-04:00"
+                        jcr:lastModified="{Date}2021-09-22T16:00:52.187-07:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="asset-share-commons/components/search/results"
@@ -303,20 +303,21 @@
                         limit="{Long}24"
                         listResultResourceType="/apps/asset-share-commons/components/search/results/result/list"
                         loadMoreLabel="Load more"
-                        missingImage="/content/dam/asset-share-commons/en/site/missing-thumbnail.jpg"
+                        missingImage="/content/dam/wknd-asset-share/en/site/missing-thumbnail.jpg"
                         noResultsText="Your search did not match any assets."
                         orderBy="@jcr:content/jcr:lastModified"
+                        orderByCase="true"
                         orderBySort="desc"
-                        paths="[/content/dam/asset-share-commons/en/public]"/>
+                        paths="/content/dam/wknd/en"/>
                 </responsivegrid>
                 <header
                     jcr:created="{Date}2017-09-18T14:59:16.766-04:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2017-10-17T11:47:24.402-04:00"
+                    jcr:lastModified="{Date}2021-09-22T16:00:35.000-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="asset-share-commons/components/structure/header"
-                    logoPath="/content/dam/asset-share-commons/en/site/Logo-light.png"
+                    logoPath="/content/dam/wknd-asset-share/en/site/wknd-share-logo.svg"
                     mobileMenuLabel="Menu"
                     rootPath="/content/wknd-asset-share/us/en">
                     <pages jcr:primaryType="nt:unstructured">
@@ -340,7 +341,7 @@
             <asset-details
                 jcr:primaryType="nt:unstructured"
                 defaultPath="/content/wknd-asset-share/us/en/details"
-                placeholderPath="/content/dam/asset-share-commons/en/site/placeholder.jpeg"
+                placeholderPath="/content/dam/wknd-asset-share/en/site/placeholder.jpeg"
                 selector="asset-type"/>
             <actions jcr:primaryType="nt:unstructured">
                 <download
