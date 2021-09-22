@@ -25,10 +25,10 @@
 
 /* Color Palette */
 @primaryColor      : #FFEA00;
-@secondaryColor    : #505050;
+@secondaryColor    : #202020;
 
 /* Custom Neutrals */
-@darkGrey         : #909090;  // Brand
+@darkGrey         : #6d6d6d;  // Brand
 @midGrey          : #D0D0D0;  // Brand
 
 /*-------------------
@@ -39,11 +39,15 @@
 @positiveColor           : @primaryColor;
 
 /* Text */
-@fontName          : 'LatoWeb';
+@fontName          : 'Source Sans Pro';
+@headerFontName    : 'Asar';
 @fontSmoothing     : antialiased;
 @headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @textColor         : @secondaryColor;
+@invertedTextColor : @textColor;
+
+@importGoogleFonts : false;
 
 
 /* Backgrounds */
@@ -52,14 +56,14 @@
 
 /* Links */
 @linkColor           : @textColor;
-@linkHoverColor      : @primaryColor;
+@linkHoverColor      : #0045FF;
 
 /* Buttons */
-@buttonPrimaryColor      : #2FCC9C; /* must be a value to prevent variable recursion*/
+@buttonPrimaryColor      : #FFEA00; /* must be a value to prevent variable recursion*/
 @buttonPrimaryColorHover : saturate(darken(@buttonPrimaryColor, 5), 10, relative);
 
 /* Filters (Checkboxes,radio buttons, toggle, slider, dropdown, accordion colors)*/
-@filterPrimaryColor      : @primaryColor;
+@filterPrimaryColor      : @secondaryColor;
 @filterPrimaryColorFocus : saturate(darken(@filterPrimaryColor, 5), 10, relative);
 
 /* Label */
@@ -72,7 +76,7 @@
 /* Message */
 @msgPositiveBackgroundColor : @primaryColor;
 @msgNegativeBackgroundColor : @red;
-@msgInfoBackgroundColor: @secondaryColor;
+@msgInfoBackgroundColor: @darkGrey;
 @msgWarningBackgroundColor: @yellow;
 
 /* Resource Paths */

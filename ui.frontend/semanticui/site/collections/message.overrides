@@ -32,10 +32,10 @@
 /* Positive */
 .ui.positive.message {
   background-color: @positiveBackgroundColor;
-  color: @white;
+  color: @textColor;
 }
 .ui.positive.message .header {
-  color: @white;
+  color: @textColor;
 }
 
 /* Negative */

@@ -3,3 +3,5 @@
 
 @primaryColor  : @buttonPrimaryColor;
 @primaryColorHover  : @buttonPrimaryColorHover;
+@primaryTextColor: #202020;
+@borderRadius: 0;

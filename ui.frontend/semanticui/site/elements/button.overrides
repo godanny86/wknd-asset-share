@@ -28,5 +28,13 @@
 
 .ui.icon.button.plain:hover {
 	background: none;
-	color: @linkHoverColor;
 }
+
+.ui.button {
+  text-transform: uppercase;
+}
+
+.ui.positive.button, .ui.positive.button:hover {
+  color: @secondaryColor;
+}
+

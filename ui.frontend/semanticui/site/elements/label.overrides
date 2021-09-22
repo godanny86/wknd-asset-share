@@ -1,7 +1,7 @@
 
 /*--- Primary Color ---*/
-@primaryTextColor: @white;
-@primaryHoverTextColor: @white;
+@primaryTextColor: @textColor;
+@primaryHoverTextColor: @primaryTextColor;
 
 .ui.primary.labels .label,
 .ui.primary.label {
