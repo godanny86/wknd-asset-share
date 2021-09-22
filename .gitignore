@@ -101,3 +101,7 @@ reports/
 
 # Others
 dispatcher/src/conf.d/variables/default.vars
+
+#Mac OS
+
+.DS_Store
